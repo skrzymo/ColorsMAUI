@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ColorsMAUI.MainPage">
+			 
+    <Grid
+        RowSpacing="25" RowDefinitions="*, Auto, Auto, Auto"
+        ColumnSpacing="25" ColumnDefinitions="*, Auto"
+        Padding="30, 0" >
+
+
+        <Rectangle
+            x:Name="ColorRectangle"
+            Grid.Row="0" Grid.ColumnSpan="2"
+            VerticalOptions="Fill"
+            Fill="Black" />
+
+        <Slider
+            x:Name="SliderR"
+            Grid.Row="1" Grid.Column="0"
+            ValueChanged="Slider_ValueChanged"/>
+
+        <Label
+            x:Name="LabelR"
+            WidthRequest="65"
+            Grid.Row="1" Grid.Column="1"
+            HorizontalTextAlignment="End"
+            VerticalTextAlignment="Center"
+            Text="0" TextColor="Red" FontSize="35" />
+
+        <Slider
+            x:Name="SliderG"
+            Grid.Row="2" Grid.Column="0"
+            ValueChanged="Slider_ValueChanged" />
+
+        <Label
+            x:Name="LabelG"
+            WidthRequest="65"
+            Grid.Row="2" Grid.Column="1"
+            HorizontalTextAlignment="End"
+            VerticalTextAlignment="Center"
+            Text="0" TextColor="Green" FontSize="35" />
+
+        <Slider
+            x:Name="SliderB"
+            Grid.Row="3" Grid.Column="0"
+            ValueChanged="Slider_ValueChanged" />
+
+        <Label
+            x:Name="LabelB"
+            WidthRequest="65"
+            Grid.Row="3" Grid.Column="1"
+            HorizontalTextAlignment="End"
+            VerticalTextAlignment="Center"
+            Text="0" TextColor="Blue" FontSize="35" />
+
+    </Grid>
+            
+
+    <!--<ScrollView>
+        <VerticalStackLayout 
+            Spacing="25" 
+            Padding="30,0" 
+            VerticalOptions="Center">
+
+            <Image
+                Source="dotnet_bot.png"
+                SemanticProperties.Description="Cute dot net bot waving hi to you!"
+                HeightRequest="200"
+                HorizontalOptions="Center" />
+                
+            <Label 
+                Text="Hello, World!"
+                SemanticProperties.HeadingLevel="Level1"
+                FontSize="32"
+                HorizontalOptions="Center" />
+            
+            <Label 
+                Text="Welcome to .NET Multi-platform App UI"
+                SemanticProperties.HeadingLevel="Level2"
+                SemanticProperties.Description="Welcome to dot net Multi platform App U I"
+                FontSize="18"
+                HorizontalOptions="Center" />
+
+            <Button 
+                x:Name="CounterBtn"
+                Text="Click me"
+                SemanticProperties.Hint="Counts the number of times you click"
+                Clicked="OnCounterClicked"
+                HorizontalOptions="Center" />
+
+        </VerticalStackLayout>
+    </ScrollView>-->
+ 
+</ContentPage>
+
